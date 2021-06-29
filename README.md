@@ -20,3 +20,8 @@ Send http get request with json data.
 ### Output
 
 `https://github.com/minho42#:~:text= Minho`
+
+
+## See also
+- https://github.com/GoogleChromeLabs/link-to-text-fragment
+- https://wicg.github.io/scroll-to-text-fragment/
