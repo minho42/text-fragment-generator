@@ -12,7 +12,6 @@ const generator = async ({ url, selector }) => {
       const { data } = await axios.get(url);
       const $ = cheerio.load(data);
       const result = $(selector).text();
-      console.log(result);
       const uri = `${url}#:~:text=${result}`;
       resolve(uri);
     } catch (e) {
