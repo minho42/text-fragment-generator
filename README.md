@@ -7,7 +7,7 @@ Generate text fragment from css selector.
 
 Send http get request with json data.
 ### api route
-`http://localhost:8000/api`
+`https://text-fragment-generator.herokuapp.com/api`
 
 ### json data
 ```json
