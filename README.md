@@ -2,10 +2,10 @@
 
 Generate text fragment from css selector.
 
+
+## Usage
+
 Send http get request with json data.
-
-## Example
-
 ### api route
 `http://localhost:8000/api`
 
@@ -20,6 +20,7 @@ Send http get request with json data.
 ### Output
 
 `https://github.com/minho42#:~:text= Minho`
+
 
 
 ## See also
