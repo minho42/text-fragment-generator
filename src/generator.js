@@ -2,7 +2,7 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 
 const generator = async ({ url, selector }) => {
-  return new Promise(async function (resolve, reject) {
+  return new Promise(async (resolve, reject) => {
     try {
       if (!url || !selector) resolve({ error: "must provide url and selector" });
       if (url.endsWith("/")) {
