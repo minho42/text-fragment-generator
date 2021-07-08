@@ -1,8 +1,10 @@
-require("dotenv").config();
-const express = require("express");
-const morgan = require("morgan");
-const helmet = require("helmet");
-const generator = require("./generator");
+import dotenv from "dotenv";
+dotenv.config();
+
+import express from "express";
+import morgan from "morgan";
+import helmet from "helmet";
+import { generator } from "./generator.js";
 
 const app = express();
 app.use(morgan("tiny"));

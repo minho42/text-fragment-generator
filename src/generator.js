@@ -1,5 +1,5 @@
-const axios = require("axios");
-const cheerio = require("cheerio");
+import axios from "axios";
+import cheerio from "cheerio";
 
 const generator = async ({ url, selector }) => {
   if (!url || !selector) resolve({ error: "must provide url and selector" });
@@ -14,4 +14,4 @@ const generator = async ({ url, selector }) => {
   return uri;
 };
 
-module.exports = generator;
+export { generator };
