@@ -9,7 +9,7 @@ const generator = async ({ url, selector }) => {
 
   const { data } = await axios.get(url);
   const $ = cheerio.load(data);
-  const result = $(selector).text();
+  const result = $(selector).text().trim();
   const uri = `${url}#:~:text=${result}`;
   return uri;
 };
