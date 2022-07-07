@@ -1,5 +1,5 @@
 import axios from "axios";
-import cheerio from "cheerio";
+import * as cheerio from "cheerio";
 
 const generator = async ({ url, selector }) => {
   if (!url || !selector) resolve({ error: "must provide url and selector" });
